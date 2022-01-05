@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Conn_02x13_Odd_Even-Connector_Generic
+D GPIO Connector
+K Raspberry Pi
+$ENDCMP
+#
+$CMP MH-Z19B
+D NDIR Carbon dioxide Module, CO2
+K Carbon dioxide sensor CO2 temp temperature
+F https://www.winsen-sensor.com/d/files/MH-Z19B.pdf
+$ENDCMP
+#
+#End Doc Library
