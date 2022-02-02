@@ -80,7 +80,15 @@ void setup()
 
   
   BORDERS.begin(LOWGREENVALUE,HIGHGREENVALUE,LOWYELLOWVALUE,HIGHYELLOWVALUE,LOWREDVALUE,HIGHREDVALUE);    //Set CO2 limits 
- 
+   /* we are going to wait for 1s and light up all LEDs */
+  digitalWrite(LEDred, HIGH);
+  digitalWrite(LEDyellow, HIGH);
+  digitalWrite(LEDgreen, HIGH);
+  delay(1000);
+  digitalWrite(LEDred, LOW);
+  digitalWrite(LEDyellow, LOW);
+  digitalWrite(LEDgreen, LOW);
+  
   mySerial.begin(BAUDRATE);                               // Software Serial device to MH-Z19 serial start   
   myMHZ19.begin(mySerial);                                // *Serial(Stream) refence must be passed to library begin(). 
 

@@ -11,8 +11,9 @@
 #define LEDgreen    15
 
 //Sensor settings
-#define RXPIN 5    
-#define TXPIN 4
+#define RXPIN 4
+#define TXPIN 5
+
 #define BAUDRATE 9600
 
 //Buzzer settings
@@ -22,12 +23,12 @@
 #define HYSTERESE       20
 
 //CO2 Intervalls
-#define LOWGREENVALUE   400
+#define LOWGREENVALUE   100
 #define HIGHGREENVALUE  1000
-#define LOWYELLOWVALUE  1001
-#define HIGHYELLOWVALUE 1400    
-#define LOWREDVALUE     1401
-#define HIGHREDVALUE    2000
+#define LOWYELLOWVALUE  800
+#define HIGHYELLOWVALUE 2000    
+#define LOWREDVALUE     1400
+#define HIGHREDVALUE    5000
 
 
 #endif
