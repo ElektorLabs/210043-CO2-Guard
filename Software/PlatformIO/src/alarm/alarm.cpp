@@ -22,10 +22,6 @@ void ALARM::checkAlarm (int co2_val)
                 alarm = true;
                 setBuzzer();
             }
-           /* if ( ((co2_val) > alarm_value + 20) && alarm == true )
-            {
-                setBuzzer();
-            }*/
         }
         else 
         {
@@ -35,14 +31,14 @@ void ALARM::checkAlarm (int co2_val)
                 clearBuzzer();
                 alarm = false;
                 }
-                /*
-                if ( ((co2_val ) < alarm_value -20 ) && alarm == false )
-                {
-                    clearBuzzer();
-                }*/
-                
         }   
-
        
     }    
 
+void ALARM::testAlarm(bool on){
+    if(true==on){
+         setBuzzer();
+    } else {
+         clearBuzzer();
+    }
+}

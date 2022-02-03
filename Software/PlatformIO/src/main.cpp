@@ -84,10 +84,12 @@ void setup()
   digitalWrite(LEDred, HIGH);
   digitalWrite(LEDyellow, HIGH);
   digitalWrite(LEDgreen, HIGH);
+  BIEP.testAlarm(true);
   delay(1000);
   digitalWrite(LEDred, LOW);
   digitalWrite(LEDyellow, LOW);
   digitalWrite(LEDgreen, LOW);
+  BIEP.testAlarm(false);
   
   mySerial.begin(BAUDRATE);                               // Software Serial device to MH-Z19 serial start   
   myMHZ19.begin(mySerial);                                // *Serial(Stream) refence must be passed to library begin(). 

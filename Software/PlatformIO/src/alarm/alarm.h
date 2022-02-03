@@ -18,8 +18,6 @@ class ALARM : BUZZER
             ALARM(int low_red_value, int hysterese, int tone, int pin_buzzer);
             
             void checkAlarm (int co2_Value);
-           
-
-
+			void testAlarm(bool on);
 
 };
