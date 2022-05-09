@@ -1,0 +1,181 @@
+
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	color: #dee2e6;
+	background-color: #212529;
+	font-family: 'Hind', sans-serif;
+	text-transform: uppercase;
+    height: 100%;
+	overflow: hidden;
+}
+
+.frame {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	color: #dee2e6;
+	background-color: #212529;
+	font-family: 'Hind', sans-serif;
+	text-transform: uppercase;
+    height: 100%;
+	overflow: hidden;
+}
+
+
+
+.container {
+	position: relative;
+	line-height: 0;
+}
+
+.score {
+	position: absolute;
+	top: 10px;
+	line-height: 1;
+}
+
+.score span {
+	font-size: 3.25rem;
+}
+
+.current-score {
+	left: 10px;
+}
+
+.high-score {
+	text-align: right;
+	right: 10px;
+}
+
+.trigger {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	bottom: 10px;
+  border: 0;
+	border-radius: 50%;
+  color: inherit;
+	background-color: #e64980;
+	text-align: center;
+	line-height: 80px;
+	font-size: 1.25rem;
+  text-transform: inherit;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+  outline: none;
+}
+
+.ball_btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	bottom: 0px;
+  border: 0;
+	border-radius: 50%;
+  color: inherit;
+	background-color: #e64980;
+	text-align: center;
+	line-height: 40px;
+	font-size: 0.5rem;
+  text-transform: inherit;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+  outline: none;
+}
+
+.left-trigger {
+	left: 10px;
+}
+
+.right-trigger {
+	right: 60px;
+}
+
+.start-trigger {
+    right: 10px;
+}
+
+canvas {
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.75);
+}
+
+/* responsive scaling, because pinball tables are tall */
+@media (min-height: 0px) {
+	.container { -webkit-transform: scale(0.25); transform: scale(0.25); }
+}
+@media (min-height: 400px) {
+	.container { -webkit-transform: scale(0.5); transform: scale(0.5); }
+}
+@media (min-height: 600px) {
+	.container { -webkit-transform: scale(0.75); transform: scale(0.75); }
+}
+@media (min-height: 800px) {
+	.container { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
